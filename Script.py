@@ -124,12 +124,32 @@ This module only works for my admins
 ★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
-    LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """#NewGroup groot
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
 """
-    LOG_TEXT_P = """#NewUser
+    I_CUDNT = """<b>Sᴏʀʀʏ Nᴏ Fɪʟᴇs Wᴇʀᴇ Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Rᴇǫᴜᴇꜱᴛ {} 🙂
+
+Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ ɪɴ Gᴏᴏɢʟᴇ Aɴᴅ Tʀʏ Aɢᴀɪɴ 😃
+
+<blockquote>ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇🏻</blockquote>
+
+<blockquote>ᴇxᴀᴍᴘʟᴇ : </blockquote>
+<blockquote>Leo</blockquote>
+<blockquote>Leo Tamil</blockquote>
+<blockquote>Leo 2023</blockquote>
+
+<blockquote>ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇🏻</blockquote>
+
+<blockquote>ᴇxᴀᴍᴘʟᴇ : </blockquote>
+<blockquote>Loki</blockquote>
+<blockquote>Loki S01</blockquote>
+<blockquote>Loki S01 E05</blockquote>
+
+🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
+    
+    LOG_TEXT_P = """#NewUser groot
 ID - <code>{}</code>
 Name - {}
 """
