@@ -97,12 +97,7 @@ async def next_page(bot, query):
     elif off_set is None:
         btn.insert(0,
             [
-                InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔈', url=f'https://t.me/All_In_One_Linkz'),
-            ]
-        )
-        btn.insert(1,
-            [
-                InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔈', url=f'https://t.me/All_In_One_Linkz'),
+                InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
             ]
         )
         btn.append(
@@ -720,7 +715,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query <u><i>{search}</u></i>"
+        cap = f"Rᴇsᴜʟᴛs ғᴏʀ 🔍 `{search}`"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -747,7 +742,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("<b>I couldn't find anything in than name.\n\n<a href='https://t.me/Group_Linkzzzz'>Check in our other groups</a></b>")
+        k = await reply_msg.edit_text(text=script.I_CUDNT.format(mv_rqst), reply_markup=InlineKeyboardMarkup(button))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -788,7 +783,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b><i>I couldn't find anything related to that Did you mean any one of these?\n\nനിങ്ങൾ ഉദ്ദേശിച്ച മൂവി താഴെ കാണുന്ന വല്ലതും ആണ് എങ്കിൽ.അതിൽ ക്ലിക്ക് ചെയ്യുക</i></b>",
+    await msg.reply("<b><i>I couldn't find anything related to that Did you mean any one of these?</i></b>",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
