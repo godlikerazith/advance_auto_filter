@@ -1,14 +1,31 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻L𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, Im Search Bot I can share Movies and Series 😁 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴀɢɪᴄ ᴏʀ ʀᴇᴀᴅ ᴍᴏʀᴇ ғʀᴏᴍ ᴛʜᴇ ᴍᴇɴᴜ ʙᴇʟᴏᴡ ♥️♥️🔥"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/VJBots_bot>VJ</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱"""
-    SOURCE_TXT = """<b>Source Code Of This Bot is PUBLIC. This Bot Repository is Public by Tech_VJ YouTube Channel 😊"""
+    START_TXT = """I ᴀᴍ Gʀᴏᴏᴛ.... 🌱
+
+<b>Cʀᴇᴀᴛᴏʀ </b>⚡️ <a href='https://t.me/GODLike_razith'>Rᴀᴢɪᴛʜ 🜲</a>"""
+    HELP_TXT = """Hᴇʏ {}\nHᴇʀᴇ Mꜱ Mʏ Hᴇʟᴩ"""
+    
+    ABOUT_TXT = """╭────[ ᴀɪᴏ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ ]────᯽
+├
+├✧ 💫 Mʏ Nᴀᴍᴇ ⇌ {}
+├
+├✧ 🧱 Dᴇᴠᴇʟᴏᴘᴇʀ ⇌ <a href='https://t.me/GODLike_razith'>Rᴀᴢɪᴛʜ</a>
+├
+├✧ ☁️ Sᴇʀᴠᴇʀ ⇌ VPS
+├
+├✧ 🛠 Bᴜɪʟᴅ ⇌ v.0.7[Exᴘʀᴇss]> 
+├
+╰───────────────᯽"""
+    SOURCE_TXT = """<b><blockquote>    
+ɴᴏᴛᴇ : ᴛʜɪꜱ ɪꜱ ᴀɴ ᴄʟᴏsᴇᴅ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ⚠️
+    
+ᴛʜɪs ʙᴏᴛ ʜᴀs ʟᴀsᴛᴇsᴛ ᴀɴᴅ ᴀᴅᴠᴀɴᴄᴇᴅ ꜰᴇᴀᴛᴜʀᴇs⚡️
+
+» ᴅᴏɴ'ᴛ ᴡᴏʀʀʏ
+» ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ʟɪᴋᴇ ᴛʜɪꜱ ʙᴏᴛ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ..!
+» ɪ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴀ ʙᴏᴛ ꜰᴏʀ ʏᴏᴜ </blockquote></b>
+
+<b> » ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ : <a href=https://t.me/GODLike_razith>ＲＡＺＩＴＨ</a></b>"""
+    
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and 𝐉𝐞𝐫𝐫𝐲 will respond whenever a keyword is found the message
@@ -44,6 +61,7 @@ class script(object):
 2. make sure that your channel does not contains camrips, porn and fake files.
 3. Forward the last message to me with quotes.
  I'll add all the files in that channel to my db."""
+    
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
@@ -67,6 +85,23 @@ these are the extra features of Eva Maria
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
+
+    IMDB_TEMPLATE = """<b>Qᴜᴇʀʏ: {query}</b>
+
+🏷 Tɪᴛʟᴇ: <a href={url}>{title}</a>
+🎭 Gᴇɴʀᴇꜱ: {genres}
+📆 Yᴇᴀʀ: <a href={url}/releaseinfo>{year}</a>
+🌟 Rᴀᴛɪɴɢ: <a href={url}/ratings>{rating}</a>/10"""
+    
+    CAPTION = """<code>📂Fɪʟᴇ Nᴀᴍᴇ : {file_name}</code>
+    
+<code>🗳️Fɪʟᴇ Sɪᴢᴇ : {file_size}</code>
+
+
+╔═*.·:·.✧ ✦ ✧.·:·.*═╗
+    <a href='https://t.me/All_In_One_Linkz'>Jᴏɪɴ Fᴏʀ Mᴏᴠɪᴇs</a>
+╚═*.·:·.✧ ✦ ✧.·:·.*═╝"""
+    
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
