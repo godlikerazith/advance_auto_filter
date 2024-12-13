@@ -24,8 +24,8 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton("Updates", url="https://t.me/VJ_Bots"),
-                InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ")
+                InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/All_In_One_Linkz")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -41,9 +41,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 Subscribe YouTube Channel 💗', url=f'http://youtube.com/@Tech_VJ')
-            ],[
-            InlineKeyboardButton('♻️ Update Channel ♻️', url=f'https://t.me/VJ_Botz')
+            InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔈', url=f'https://t.me/All_In_One_Linkz')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
@@ -63,9 +62,8 @@ async def start(client, message):
             return
 
         buttons = [[
-            InlineKeyboardButton('💝 Subscribe YouTube Channel 💗', url=f'http://youtube.com/@Tech_VJ')
-            ],[
-            InlineKeyboardButton('♻️ Update Channel ♻️', url=f'https://t.me/VJ_Botz')
+            InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔈', url=f'https://t.me/All_In_One_Linkz')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
@@ -131,7 +129,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ")] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔈', url=f'https://t.me/All_In_One_Linkz')] ] ),
                     
                     protect_content=msg.get('protect', False),
                     )
@@ -228,7 +226,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         
-        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("🍿 YouTube Channel 🍿", url="https://youtube.com/@Tech_VJ")] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('Cʜᴀɴɴᴇʟ 🔈', url=f'https://t.me/All_In_One_Linkz')] ] ),
         
         protect_content=True if pre == 'filep' else False,
         )
