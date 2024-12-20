@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '20280383'))
-API_HASH = environ.get('API_HASH', '8742e49f7681c71180fed37d4736fc3b')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7716114735:AAHNREdZtzxYw1_QKY5YnLshSAmSb4ZUosM")
+API_ID = int(environ.get('API_ID', '20059547'))
+API_HASH = environ.get('API_HASH', 'b399bfcd23ffc95ba7b20904fa5cb35f')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7716114735:AAGxVeNpklg36JTnmgCXolhjVaFHvZRKvSw")
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot settings
@@ -37,10 +37,10 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_videos')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL', '-1002345510042')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", 'False')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002345510042')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
@@ -48,7 +48,7 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002423270359'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'chat_sup_6')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = is_enabled((environ.get('IMDB', "False")), True)
+IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", script.CAPTION)
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
