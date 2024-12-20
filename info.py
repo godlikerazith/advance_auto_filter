@@ -13,15 +13,15 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '26656618'))
-API_HASH = environ.get('API_HASH', '2850721c73dbc207b5cf15362c28a66c')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7665347583:AAH5jT1a_pV55EmdRIaF2C-zYAgydXNSNtk")
+API_ID = int(environ.get('API_ID', '20280383'))
+API_HASH = environ.get('API_HASH', '8742e49f7681c71180fed37d4736fc3b')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7716114735:AAHNREdZtzxYw1_QKY5YnLshSAmSb4ZUosM")
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://envs.sh/s/19tYY4BnxKG_z_uEqGEJqQ/1qd.jpg https://envs.sh/s/BFWMq9dUljI5193PRuOqkA/1q2.jpg https://envs.sh/s/4cQiSF-xkTeXU5CqvYwCpg/1qF.jpg https://envs.sh/s/usvyORkIBnr17yCsYtl6pQ/1qt.jpg https://envs.sh/s/JXsZI7lWk1G0SHy1squBsg/1qe.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/s/CSRrz-88k7xMigz38iqJ8A/5RX.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1918079773 7272441320').split()]
@@ -32,15 +32,15 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://m64158059:razith786@cluster0.zzhks.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://trichy143official:razith786@cluster0.t5zht.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_videos')
 
 # FSUB
-auth_channel = environ.get('AUTH_CHANNEL', '-1002282879925')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002345510042')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002282879925')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
